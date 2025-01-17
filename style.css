@@ -9,6 +9,7 @@
 }
 body{
   overflow-x: hidden;
+  background-color: rgb(240, 240, 240);
 }
 header {
   background-color: var(--fundo);
@@ -104,6 +105,29 @@ nav ul {
 .bar::before {
   bottom: 7px;
 }
+/* sessao dos 3 cards */
+
+.mini-card img{
+  width: 57px;
+  height: 50px;
+
+}
+.mini-cards{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.mini-card {
+  width: 285px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding:20px 10px;
+  gap: 5px;
+  text-align: justify;}
 
 @media screen and (max-width: 1400px) {
   .imgGirl img {
