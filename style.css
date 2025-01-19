@@ -216,6 +216,8 @@ nav ul {
   width: 140px;
 }
 
+/* footer */
+
 @media screen and (max-width: 1400px) {
   .imgGirl img {
     width: 119%;
@@ -295,8 +297,28 @@ body{
       font-size: 2rem;
     }
   }
-}
-
-.eletric-card{
-  margin-bottom: 1rem;
+  
+  .eletric-card{
+    margin-bottom: 1rem;
+    
+  }
+  .eletric-card {
+    position: relative;
+    width: 100%;
+  }
+  .eletricos{
+    width: 100vw;
+    margin: 0;
+  }
+  .eletricos .img {
+    width: 87vw;
+  
+  }
+  .eletricos .eletric-card #favorite-card {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    border-radius: 20%;
+  }
+  
 }
