@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 :root {
   --fundo: rgb(105, 41, 165);
@@ -159,10 +160,8 @@ nav ul {
   padding: 30px;
   display: flex;
   flex-direction: column;
-
-
 }
-.eletrics-section{
+.eletrics-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -217,6 +216,93 @@ nav ul {
 }
 
 /* footer */
+footer {
+  margin: 40px;
+  display: flex;
+  max-width: 1240.5px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  align-items: center;
+  border-top: 1px solid rgb(172, 169, 169);
+  justify-content: space-between;
+}
+footer div {
+  width: 230px;
+  height: 250px;
+}
+footer #insonia {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    width: 240px;
+    font-size: 14px;
+    color: rgb(100, 99, 99);
+  }
+}
+footer #mensagem {
+  display: flex;
+  flex-direction: column;
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & input {
+      width: 100%;
+      border: none;
+      background-color: white;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+    }
+    & textarea {
+      padding: 10px 15px;
+      width: 100%;
+      height: 50px;
+      border: none;
+    }
+    & button {
+      width: 40%;
+      background-color: var(--fundo);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
+footer div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & li {
+    display: flex;
+    gap: 10px;
+    color: rgb(100, 99, 99);
+  }
+}
+footer div h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer div img {
+  width: 20px;
+  height: 20px;
+}
+
+/* fim footer */
+.autor {
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+  border-top: 1px solid rgb(172, 169, 169);
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
 
 @media screen and (max-width: 1400px) {
   .imgGirl img {
@@ -230,9 +316,9 @@ nav ul {
   }
 }
 @media screen and (max-width: 780px) {
-body{
-  overflow-x: hidden;
-}
+  body {
+    overflow-x: hidden;
+  }
   /* ativar o menu botao */
   .hamburger .bar {
     display: block;
@@ -297,22 +383,20 @@ body{
       font-size: 2rem;
     }
   }
-  
-  .eletric-card{
+
+  .eletric-card {
     margin-bottom: 1rem;
-    
   }
   .eletric-card {
     position: relative;
     width: 100%;
   }
-  .eletricos{
+  .eletricos {
     width: 100vw;
     margin: 0;
   }
   .eletricos .img {
     width: 87vw;
-  
   }
   .eletricos .eletric-card #favorite-card {
     position: absolute;
@@ -320,5 +404,13 @@ body{
     right: 1px;
     border-radius: 20%;
   }
-  
+}
+footer {
+  width: 75vw;
+  align-items: center;
+gap: 10px;
+  justify-content: center;
+}
+.autor{
+  width: 350px;
 }
