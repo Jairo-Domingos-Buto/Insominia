@@ -19,6 +19,7 @@ header {
   display: flex;
   border-bottom: 1px solid rgb(75, 74, 74);
   justify-content: space-around;
+  transition: all .1s ease-in-out;
   align-items: center;
   color: white;
 
@@ -171,6 +172,7 @@ nav ul {
   position: relative;
   display: flex;
   flex-direction: column;
+  
   gap: 10px;
   width: 220px;
 }
@@ -338,13 +340,12 @@ footer div img {
     width: 40%;
     visibility: hidden;
     transition: all 0.3s linear;
-    transform: translateX(300px);
     height: 30%;
     border-radius: 10px 0px 0px 10px;
   }
   nav.active {
     visibility: visible;
-    transform: translateX(0px);
+    
   }
   nav ul {
     display: flex;
@@ -396,7 +397,7 @@ footer div img {
     margin: 0;
   }
   .eletricos .img {
-    width: 87vw;
+    width: 85vw;
   }
   .eletricos .eletric-card #favorite-card {
     position: absolute;
@@ -404,13 +405,13 @@ footer div img {
     right: 1px;
     border-radius: 20%;
   }
-}
-footer {
-  width: 75vw;
-  align-items: center;
-gap: 10px;
-  justify-content: center;
-}
-.autor{
-  width: 350px;
+  footer {
+    width: 75vw;
+    align-items: center;
+  gap: 10px;
+    justify-content: center;
+  }
+  .autor{
+    width: 350px;
+  }
 }
